@@ -1,0 +1,144 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+body{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+
+  
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color:#fff;
+    transition: 1s;
+}
+.todo-box{
+    background-color:var(--secondary-color);
+    width: 500px;
+    /* height: 400px; */
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    border-width: 4px;
+    border-style: solid;
+  
+        border-width: 2px;
+        border-style: solid;
+        
+        border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+      
+  }
+
+.todos-heading {
+    color: var(--primary-color);
+    text-align: center;
+    padding-top:0px;
+    font-size: 30px;
+}  
+.search-area{
+    display: flex;
+    
+    justify-content: center;
+    
+}
+.inputbox{
+
+    width: 73%;
+    height: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: var(--primary-color);
+    
+    /* margin: 0px 48px 0px 4px;/ */
+}
+.inputbtn{
+    height: 32px;
+    /* width: 50px;
+    outline: none; */
+    border: 0;
+    cursor: pointer;
+    color: var(--secondary-color);
+    background-color:var(--primary-color);
+}
+
+.no-record {
+    color:var(--primary-color);
+    text-align: center;
+}.task-list {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 35px;
+    width: 77%;
+    margin: 10px 50px 10px 48px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox p {
+    margin-left: 10px;
+}
+
+.task-list > .icon {
+    cursor: pointer;
+}
+.line_through{
+    text-decoration: line-through;
+    transition: 2s;
+}
+.icon{
+    cursor: pointer;
+}
+
+  a {
+    text-decoration: none;
+    list-style: none;
+    color:var(--secondary-color);
+ }
+
+ ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+ }
+.logo{
+    font-size: 2rem;
+   
+    font-weight: bolder;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    
+   
+}
+.icon-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text-container img {
+    margin-right: 5px; /* Adjust as needed */
+}
+
+.themtext {
+    font-size: 14px; /* Adjust font size as needed */
+}
