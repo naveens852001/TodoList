@@ -3,6 +3,7 @@ services:
     name: todo-backend
     env: node
     plan: free
+    rootDir: backend 
     buildCommand: 'npm install'
     startCommand: 'node index.js'
     envVars:
