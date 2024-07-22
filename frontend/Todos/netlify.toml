@@ -1,0 +1,4 @@
+[build]
+  base = "."                          # Current directory where Vite config and package.json are located
+  command = "npm run build"           # Command to build your project
+  publish = "dist"                    # Directory where the build output is located
