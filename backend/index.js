@@ -7,11 +7,14 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb://127.0.0.1:27017/task')
-    .then((res) => {
-        console.log("mongodb connected");
-    })
-    .catch((err) => { console.log(err) })
+const mongoURI = 'mongodb+srv://root:admin852001@cluster0.fe8g9eg.mongodb.net/task'; // Replace with your cloud MongoDB URI
+
+// Connect to MongoDB
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
+
 app.get("/hello", (req, res) => {
     res.send("hello");
 });
