@@ -1,4 +1,4 @@
 [build]
   base = "todos/frontend/Todos"
   command = "npm run build"
-  publish = "todos/frontend/Todos/build"
+  publish = "todos/frontend/Todos/dist"
