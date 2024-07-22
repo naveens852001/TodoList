@@ -31,7 +31,7 @@ function Navigation() {
 
                 <li>
                 <div className="icon-text-container">
-                            <img src="./public/img/moon.png" id="icon" alt="Theme Icon" />
+                            <img src="./img/moon.png" id="icon" alt="Theme Icon" />
                             <span className='themetext'>{themeText}     </span>
                 </div>
                 </li>
