@@ -1,4 +1,4 @@
 [build]
-  base = "todos/frontend/Todos"
-  command = "npm run build"
-  publish = "todos/frontend/Todos/dist"
+  base = "todos/frontend/todos"         # Path where Vite configuration and package.json are located
+  command = "npm run build"              # Command to build your project
+  publish = "todos/frontend/todos/dist"  # Directory where Vite outputs the build
