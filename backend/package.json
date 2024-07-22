@@ -3,15 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
-
-
-
-"scripts": {
-
-
-
-    "start": "node index.js" 
+  "scripts": {
+    "start": "node index.js",
+      "build": "echo 'No build needed for backend'"
   },
   "keywords": [],
   "author": "",

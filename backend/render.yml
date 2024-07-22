@@ -1,8 +1,10 @@
 services:
   - type: web
-    name: my-backend
+    name: todo-backend
     env: node
-    buildCommand: "npm install"
-    startCommand: "node index.js"
-    sourceDir: "backend"
     plan: free
+    buildCommand: 'npm install'
+    startCommand: 'node index.js'
+    envVars:
+      - key: DATABASE_URL
+        value: mongodb+srv://root:admin852001@cluster0.fe8g9eg.mongodb.net/task
