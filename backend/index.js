@@ -35,7 +35,7 @@ app.post("/add", (req, res) => {
 app.get("/get", (req, res) => {
     TodoModel.find()
         .then(result => res.json(result))
-        .catch(err => res.json(result))
+        .catch(err => res.json(err))
 })
 
 //api for updating task

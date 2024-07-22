@@ -1,7 +1,4 @@
 [build]
-  base = "TODOS/frontend/Todos"
+  base = "todos/frontend/Todos"
   command = "npm run build"
-  publish = "TODOS/frontend/Todos/build"
-
-[context.production.environment]
-  NODE_VERSION = "21" # or the version you are using
+  publish = "todos/frontend/Todos/build"
