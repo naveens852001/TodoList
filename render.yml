@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: my-backend
-    env: node
-    buildCommand: ""
-    startCommand: "node backend/index.js"
-    sourceDir: "backend"
-    plan: free

@@ -10,7 +10,7 @@ app.use(express.json())
 const mongoURI = 'mongodb+srv://root:admin852001@cluster0.fe8g9eg.mongodb.net/task'; // Replace with your cloud MongoDB URI
 
 // Connect to MongoDB
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoURI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
