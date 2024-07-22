@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-const mongoURI = 'mongodb+srv://root:admin852001@cluster0.fe8g9eg.mongodb.net/task'; // Replace with your cloud MongoDB URI
+const mongoURI = 'mongodb+srv://root:admin852001@cluster0.fe8g9eg.mongodb.net/task?retryWrites=true&w=majority'; // Replace with your cloud MongoDB URI
 
 // Connect to MongoDB
 mongoose.connect(mongoURI)
