@@ -7,7 +7,7 @@ function Create() {
     const [task,settask]=useState()
     const handleSubmit=(e)=>{
       e.preventDefault();
-        axios.post('http://localhost:3000/add',{task:task})
+        axios.post('https://todolist-mip9.onrender.com/add',{task:task})
         .then(result=>{
 
           settask('');
@@ -22,7 +22,7 @@ function Create() {
       <form   onSubmit={handleSubmit}>
          <div className='search-area' >
          <input type="text" className='inputbox' name='' placeholder='Enter your task here' id='' onChange={(e)=>settask(e.target.value)} />
-         <button type='button'className='inputbtn' >Add</button>
+         <button type='submit'className='inputbtn' >Add</button>
          </div>
       </form>
        

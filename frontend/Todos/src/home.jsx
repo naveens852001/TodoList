@@ -16,14 +16,14 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/get")
+      .get("https://todolist-mip9.onrender.com/get")
       .then((result) => settodos(result.data))
       .catch((err) => console.log(err));
   }, []);
 
   const handlecheck = (id, currentState) => {
     axios
-      .put(`http://localhost:3000/update/${id}`, { done: !currentState })
+      .put(`https://todolist-mip9.onrender.com/update/${id}`, { done: !currentState })
      
       .then((result) => {
         settodos(
@@ -36,7 +36,7 @@ function Home() {
   };
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3000/delete/${id}`)
+    axios.delete(`https://todolist-mip9.onrender.com/delete/${id}`)
         .then(result => {
             // Update the state without reloading the page
             settodos(todos.filter(todo => todo._id !== id));
