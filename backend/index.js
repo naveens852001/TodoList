@@ -18,6 +18,9 @@ mongoose.connect(mongoURI)
 app.get("/hello", (req, res) => {
     res.send("hello");
 });
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+  });
 const port = 3000;
 
 app.listen(port, () => {
